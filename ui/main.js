@@ -1,22 +1,11 @@
-console.log('Loaded!');
+var button = document.getElementById('counter');
 
-//change the text of main text
-
-var element = document.getElementById('main-text');
-
-element.innerHTML = "Wow, this is awesome mate!";
-
-//mave image
-
-var img = document.getElementById('mady');
-
-var marginLeft = 0;
-
-function moveRight(){
-    marginLeft = marginLeft + 2;
-    img.style.marginLeft = marginLeft + 'px' ;
-}
-
-img.onclick = function () {
-    var interval = setInterval(moveRight, 50);
+button.onclick = function () {
+  
+  
+  
+  counter += 1;
+  var span = document.getElmentById('count');
+  span.innerHTML = counter.toString();
+    
 };

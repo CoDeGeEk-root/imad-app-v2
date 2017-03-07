@@ -23,8 +23,7 @@ button.onclick = function () {
  };
  
  //submit name
- var nameInput = document.getElementById('name');
- var name = nameInput.value;
+
  var submit = document.getElementById('submit_btn');
  submit.onclick = function() {
      var request  = new XMLHttpRequest();
@@ -45,6 +44,8 @@ button.onclick = function () {
         
     }
   };
+ var nameInput = document.getElementById('name');
+ var name = nameInput.value;
   //Make the request
   request.open('GET','http://codegeek-root.imad.hasura-app.io/submit-name?name=' + name,true);
   request.send(null);

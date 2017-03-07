@@ -18,7 +18,7 @@ button.onclick = function () {
     }
   };
   //Make the request
-  request.open('GET','codegeek-root.imad.hasura-app.io/counter',true);
+  request.open('GET','htt[://codegeek-root.imad.hasura-app.io/counter',true);
   request.send(null);
   
   
